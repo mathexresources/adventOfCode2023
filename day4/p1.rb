@@ -1,0 +1,1 @@
+sum = 0; File.readlines("input").each do |c| my, win, points = c.split(": ")[1].split(" | ")[1].split(" ").map(&:to_i), c.split(": ")[1].split(" | ")[0].split(" ").map(&:to_i), 0; my.each do |m| points == 0 ? points = 1 : points *= 2 if win.include?(m) end; sum += points end; p sum

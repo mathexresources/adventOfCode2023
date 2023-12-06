@@ -1,0 +1,1 @@
+timeHold, solutions, rTime, rDist = 0, 0, File.readlines("input")[0].gsub("\n", "").gsub(" ", "").split(":")[1].to_i, File.readlines("input")[1].gsub("\n", "").gsub(" ", "").split(":")[1].to_i; rTime.times do solutions += 1 if timeHold * (rTime - timeHold) > rDist; timeHold += 1 end; p solutions

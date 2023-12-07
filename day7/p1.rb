@@ -38,3 +38,5 @@ end
 bid = 0
 rankHands.each_with_index.map {|v,k| bid += v[1] * (k+1)}
 p bid
+
+#asn to low 249581371
